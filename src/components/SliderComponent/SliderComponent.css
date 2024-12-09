@@ -1,0 +1,29 @@
+.slider-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+
+    .slider-container {
+        margin-top: 50px;
+        margin: auto;
+        padding: 20px;
+      }
+    
+      .slider-image {
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+  }

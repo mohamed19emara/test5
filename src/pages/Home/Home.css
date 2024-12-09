@@ -1,0 +1,37 @@
+/* Home Page Styles */
+.categories, .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card, .product-card {
+  flex: 0 1 220px; /* تحديد حجم ثابت للبطاقات */
+  margin: 10px;
+  padding: 15px; /* تقليص المسافة الداخلية */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* إضافة تأثير تكبير عند المرور بالماوس */
+}
+
+.category-card img, .product-card img {
+  width: 100%; /* جعل الصورة تمتد داخل البطاقة */
+  height: auto; /* الحفاظ على نسبة الأبعاد */
+  border-radius: 5px; /* إضافة شكل دائري للصور */
+}
+
+.category-card h3, .product-card h3 {
+  font-size: 16px; /* تقليص حجم النص */
+  margin-top: 10px;
+}
+
+.category-card p, .product-card p {
+  font-size: 14px; /* تقليص حجم النص في البطاقة */
+}
+
+/* إضافة تأثير عند التمرير على البطاقة */
+.category-card:hover, .product-card:hover {
+  transform: scale(1.05); /* تكبير البطاقة قليلاً */
+}

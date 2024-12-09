@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Protein Powder",
+      "description": "High-quality whey protein for muscle recovery.",
+      "price": 49.99,
+      "image": "/images/protein-powder.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Amino Acids",
+      "description": "Essential BCAAs for endurance and recovery.",
+      "price": 29.99,
+      "image": "/images/amino-acids.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pre-Workout",
+      "description": "Energy boost for your intense workouts.",
+      "price": 39.99,
+      "image": "/images/pre-workout.jpg"
+    }
+  ]
+  

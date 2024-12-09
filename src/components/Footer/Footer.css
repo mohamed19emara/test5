@@ -1,0 +1,27 @@
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #ff9900;
+  }
+  
+  footer h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

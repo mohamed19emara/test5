@@ -1,0 +1,102 @@
+/* الشريط العلوي */
+.topbar {
+    background-color: #232f3e;
+        padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .topbar-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .section-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .view-all-btn {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* الكاردز */
+  .cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+  }
+  
+  .card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  /* تنسيق تفاعلي للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .cards-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

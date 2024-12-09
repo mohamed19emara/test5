@@ -1,0 +1,154 @@
+/* Navbar styles */
+.navbar {
+  position: fixed; /* تثبيت العنصر */
+  top: 0; /* جعله أعلى الصفحة */
+  width: 100%; /* ملء العرض */
+  z-index: 1000; /* التأكد من ظهوره فوق العناصر الأخرى */
+  background-color: #fff; /* لون الخلفية */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  padding: 10px 20px; /* إضافة مسافات داخلية */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-category {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar-search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+}
+
+.navbar-search-btn {
+  padding: 10px 15px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.navbar-search-btn i {
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-user .auth-links a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar-user .logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-cart {
+  position: relative;
+  color: white;
+}
+
+.navbar-cart .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #febd69;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.user-info{
+  display: flex;
+}
+.user-info .user-greeting {
+  color: white; /* لون النص عند التمرير */
+  text-decoration: none; /* إزالة الخط السفلي */
+  padding: 5px 10px; /* إضافة مسافات حول النص */
+}
+/* تنسيق صورة المستخدم */
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px; /* لضبط المسافة بين الصورة واسم المستخدم */
+}
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.user-greeting:hover {
+  color: #0073e6; /* لون النص عند التمرير */
+}
+
+/* Media Queries for Mobile Screens */
+/* mobile */
+@media (max-width: 768px) {
+  
+  .navbar .container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+   .navbar-center{
+    display: none;
+   }
+   .navbar-left{
+    display: flex;
+    justify-content: space-between;
+   }
+   .navbar-category{
+    margin-left: 150px;
+   }
+
+
+  }
+
+
+
+
+
